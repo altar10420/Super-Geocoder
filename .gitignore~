@@ -1,0 +1,6 @@
+*.pyc
+__pycache__
+myvenv
+my-first-web
+db.sqlite3
+.DS_Store
