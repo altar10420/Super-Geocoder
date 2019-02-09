@@ -2,7 +2,16 @@
 
 {%block content%}
     <div class="container">
-        <h1>Welcome!</h1>
-        <p>This is a homepage.</p>
+        <h1>Super Geocoder</h1>
+        <p>Please enter your email and upload a file<br>or<br>chose a "No file added version" instead.</p>
+
+        <form action="{{url_for('success')}}" method="POST" enctype="multipart/form-data">
+            <input title="Your email will be safe" placeholder="Enter your email" type="email" name="email_name" required><br>
+            Choose a CSV file
+            <input type="file" accept=".csv" name="file_csv" required><br>
+            <button type="submit"> Submit your file </button>
+        </form>
+        <a class="output" href="../manual/" target="blank"><button class="btn"> No file added version </button></a>
     </div>
+
 {%endblock%}

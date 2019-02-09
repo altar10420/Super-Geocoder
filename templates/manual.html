@@ -1,0 +1,14 @@
+{%extends 'base.html'%}
+
+{%block content%}
+    <div class="container"><br><br>
+        <form action="{{url_for('record')}}" method="POST" enctype="multipart/form-data">
+            <input title="Enter an address here" placeholder="Enter an address here" type="text" name="address_name" required><br>
+            <button type="submit"> Add another </button>
+        </form>
+
+    <form class="output" action="{{url_for('manual_success')}}" method="POST" enctype="multipart/form-data">
+        <button class="output" type="submit"> Submit </button>
+    </form>
+    </div>
+{%endblock%}

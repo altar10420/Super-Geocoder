@@ -1,0 +1,17 @@
+{%extends 'base.html'%}
+
+{%block content%}
+    <div class="container">
+        <p>Thank you for submitting - <strong>"{{ email }}"</strong>.<br></p>
+
+        <div class="output">
+            {{df_html | safe}}
+            {% include btn_download ignore missing %}
+        </div>
+
+        <a class="output" href="../map" target="blank"><button class="btn"> See on map </button></a>
+
+
+    </div>
+
+{%endblock%}

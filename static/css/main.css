@@ -1,5 +1,61 @@
-.container {
-    text-align: center;
-    color: red;
+html, body {
+    height: 100%;
+    margin: 0;
+}
 
+.container {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    background-color: #006666;
+    color: #e6ffff;
+    overflow: hidden;
+    text-align: center;
+}
+
+.container h1 {
+    font-family: Arial, sans-serif;
+    font-size: 40px;
+    color: red;
+    margin-top: 60px;
+}
+
+.container form {
+    margin: 10px;
+}
+
+.container input {
+    width: 350px;
+    height: 20px;
+    font-size: 15px;
+    margin: 2px;
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.container button {
+/*    width: 70px;
+    height: 30px;*/
+    padding: 4px;
+    font-size: 15px;
+    background-color: steelblue;
+    margin: 3px;
+}
+
+.container p {
+    margin: 40px;
+}
+
+.container table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.output button {
+/*    width: 70px;
+    height: 30px;*/
+    padding: 8px;
+    font-size: 14px;
+    background-color: yellow;
+    margin: 3px;
 }
